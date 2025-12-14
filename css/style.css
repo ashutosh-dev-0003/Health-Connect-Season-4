@@ -130,6 +130,7 @@ a, a:focus, a:hover, a:active {
    width: 100%;
    height: 800px;
    object-fit: cover;
+   object-position: right top;
    }
    .container.clientlogo-container {
    position: absolute;
@@ -259,7 +260,7 @@ a, a:focus, a:hover, a:active {
    /*================ FOOTER ================*/
    footer {
    float: left;
-   background-color: #212121;
+   background-color: #fff;
    width: 100%;
    padding: 30px 0px;
    z-index: 1;
@@ -1133,4 +1134,67 @@ height: 311px;
 }
 .footer-photos-gallery{
     margin-top: 20px;
+}
+
+/* Footer Redesign Styles */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #c41230 !important;
+}
+
+footer div[style*="border: 1px solid #000"] {
+    transition: none;
+}
+
+/* POWERED BY Section Styles */
+.powered-by-section {
+    margin-bottom: 40px;
+}
+
+.powered-by-box {
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.powered-by-divider {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    background: #000;
+}
+
+@media screen and (max-width: 768px) {
+    footer .col-lg-3,
+    footer .col-lg-9 {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    
+    footer img[alt="Argus News"] {
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+    
+    /* POWERED BY Section Mobile */
+    .powered-by-box {
+        flex-direction: column !important;
+    }
+    
+    .powered-by-divider {
+        display: none !important;
+    }
+    
+    .powered-by-logo-left,
+    .powered-by-logo-right {
+        width: 100% !important;
+        padding: 20px !important;
+        border-bottom: 1px solid #000;
+    }
+    
+    .powered-by-logo-right {
+        border-bottom: none !important;
+    }
 }
