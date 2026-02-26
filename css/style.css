@@ -24,7 +24,7 @@ a, a:focus, a:hover, a:active {
    header .col-lg-3,
    header .col-md-3,
    header .col-sm-12,
-   header .col-xs-12 {
+   header .col-12 {
    display: flex;
    align-items: center;
    }
@@ -675,7 +675,7 @@ a, a:focus, a:hover, a:active {
    border: solid 1px #fbdae5;
    padding: 10px;
    }
-   .panel.ratha-faqs-panel {
+   .card.ratha-faqs-panel {
    border: none !important;
    outline: none;
    box-shadow: none;
@@ -1161,7 +1161,7 @@ height: 421px;
 width: 1260px;
 }
 }
-.col-xs-15,
+.col-15,
 .col-sm-15,
 .col-md-15,
 .col-lg-15 {
@@ -1170,7 +1170,7 @@ min-height: 1px;
 padding-right: 7.5px;
 padding-left: 7.5px;
 }
-.col-xs-15 {
+.col-15 {
 width: 20%;
 float: left;
 }
@@ -1297,7 +1297,7 @@ footer div[style*="border: 1px solid #000"] {
     header .col-lg-3,
     header .col-md-3,
     header .col-sm-12,
-    header .col-xs-12 {
+    header .col-12 {
         display: flex !important;
         align-items: center !important;
         justify-content: flex-start !important;
@@ -1380,7 +1380,7 @@ footer div[style*="border: 1px solid #000"] {
     header .col-lg-3,
     header .col-md-3,
     header .col-sm-12,
-    header .col-xs-12 {
+    header .col-12 {
         display: flex !important;
         align-items: center !important;
         justify-content: flex-start !important;
