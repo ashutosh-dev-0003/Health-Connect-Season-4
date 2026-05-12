@@ -5,35 +5,12 @@ a, a:focus, a:hover, a:active {
    header {
    float: left;
    width: 100%;
-   padding: 15px 0px;
+   padding: 15px 0px 0px 0px;
    background-color: rgb(35 57 115);
-   display: flex;
-   align-items: center;
-   min-height: 80px;
-   }
-   header .container {
-   display: flex;
-   align-items: center;
-   padding-left: 15px;
-   }
-   header .row {
-   display: flex;
-   align-items: center;
-   width: 100%;
-   }
-   header .col-lg-3,
-   header .col-md-3,
-   header .col-sm-12,
-   header .col-12 {
-   display: flex;
-   align-items: center;
    }
    img.event-main-logo {
    height: 80px;
    margin-top: 0px;
-   margin-left: 0;
-   margin-right: auto;
-   display: block;
    }
    .live-update-slide {
    position: relative;
@@ -71,17 +48,13 @@ a, a:focus, a:hover, a:active {
    ul.header-rath-part {
    margin: 0px;
    padding: 0px;
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   gap: 12px;
-   flex-wrap: wrap;
-   width: auto;
+   display: inline-block;
+   width: fit-content;
    float: right;
    }
    ul.header-rath-part li {
    list-style-type: none;
-   float: none;
+   float: left;
    }
    ul.header-rath-part li a {
    text-decoration: none;
@@ -110,37 +83,6 @@ a, a:focus, a:hover, a:active {
    }
    li.hedaer-livetv {
    margin-left: 15px;
-   }
-   .header-season-btn {
-   margin-left: 12px;
-   }
-   .header-season-btn a {
-   display: block;
-   width: 110px;
-   height: 42px;
-   line-height: 42px;
-   text-align: center;
-   border-radius: 8px;
-   color: #fff;
-   font-weight: 700;
-   text-transform: capitalize;
-   font-size: 15px;
-   transition: background-color .25s ease, box-shadow .25s ease, transform .25s ease;
-   box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
-   }
-   .header-season-btn.season-two a {
-   background-color: #2f9b48;
-   }
-   .header-season-btn.season-three a {
-   background-color: #223975;
-   }
-   .header-season-btn a:hover {
-   background-color: #1c6d30;
-   }
-   .header-season-btn.season-three a:hover {
-   background-color: #192b5c;
-   transform: translateY(-2px) scale(1.02);
-   box-shadow: 0 6px 14px rgb(0 0 0 / 25%);
    }
    /*=============== //HEADER ===============*/
    /*=============== BANNER ===============*/
@@ -203,11 +145,9 @@ a, a:focus, a:hover, a:active {
    }
    img.main-bbanner-image {
    width: 100%;
-   height: auto;
+   height: 800px;
    display: block;
    object-fit: cover;
-   object-position: center top;
-   max-width: 100%;
    }
    .container.clientlogo-container {
    position: absolute;
@@ -237,7 +177,7 @@ a, a:focus, a:hover, a:active {
    /*============== //BANNER ==============*/
    /*=============== LIVE FEED ===============*/
    h3.rathayatra-heading {
-   margin: 0px 0px 20px 0px;
+   margin: 0px 0px 25px 0px;
    padding: 0;
    text-align: center;
    position: relative;
@@ -331,17 +271,22 @@ a, a:focus, a:hover, a:active {
    text-transform: capitalize;
    font-size: 16px;
    font-weight: 700;
-   margin: 15px auto 0 auto;
+   margin: 20px auto 0 auto;
    }
    /*============== //LIVE FEED ==============*/
    /*================ FOOTER ================*/
    footer {
    float: left;
-   background-color: #fff;
+   background-color: #212121;
    width: 100%;
-   padding: 25px 0px;
+   padding: 30px 0px;
    z-index: 1;
    position: relative;
+   }
+   footer > .row {
+   max-width: 1260px;
+   margin-left: auto;
+   margin-right: auto;
    }
    ul.footer-link .footer-link-heading {
    color: #a9a3a3;
@@ -612,36 +557,23 @@ a, a:focus, a:hover, a:active {
    section.about-sec {
    float: left;
    width: 100%;
-   margin: 0 0 20px 0;
-   padding-top: 20px;
+   margin: 0 0 30px 0;
+   padding-top: 30px;
+   text-align: center;
    }
-   section.about-sec .container {
-   max-width: 100%;
-   padding-left: 40px;
-   padding-right: 40px;
-   }
-   .about-first-sec {
-   margin-bottom: 20px;
-   padding-right: 0;
-   width: 100%;
+   section.about-sec .row {
+   justify-content: center;
    }
    .about-first-sec iframe {
    width: 100%;
-   height: 500px;
+   height: 368px;
    }
 	   .about-second-sec {
 	   position: relative;
-	   display: block;
+	   display: inline-block;
 	   margin-left: 0;
-	   margin-top: 0;
-	   margin-bottom: 30px;
-	   padding-left: 0;
-	   /* text-align: center; */
-	   width: 100%;
+	   text-align: center;
 	   }
-   .about-second-sec:last-child {
-   margin-bottom: 0;
-   }
    .about-second-sec h1 {
    margin: 0;
    padding: 0;
@@ -660,9 +592,12 @@ a, a:focus, a:hover, a:active {
    font-size: 17px;
    line-height: 25px;
    color: #5f5f60;
-   margin-bottom: 8px;
+   margin-bottom: 10px;
    padding: 0;
    font-weight: 400;
+   }
+   .about-first-sec {
+   margin-bottom: 10px;
    }
    /*=============== //ABOUT ===============*/
    /*=============== GALLERY ===============*/
@@ -723,7 +658,7 @@ a, a:focus, a:hover, a:active {
    border: solid 1px #fbdae5;
    padding: 10px;
    }
-   .card.ratha-faqs-panel {
+   .panel.ratha-faqs-panel {
    border: none !important;
    outline: none;
    box-shadow: none;
@@ -783,76 +718,64 @@ a, a:focus, a:hover, a:active {
         top: 6px;
     }
    /*============== RESPONSIVE ==============*/
-   /* Banner Responsive Styles - Laptop (keep as is) */
-   @media screen and (min-width: 1200px) {
-   img.main-bbanner-image {
-   aspect-ratio: 16/10;
-   object-fit: cover;
-   }
-   }
-   /* Tablet Styles */
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-   .main-banner {
-   max-height: 500px;
-   }
-   img.main-bbanner-image {
-   width: 100%;
-   height: auto;
-   max-height: 500px;
-   object-fit: cover;
-   object-position: center center;
-   }
-   section.about-sec .container {
-   padding-left: 30px;
-   padding-right: 30px;
-   }
-   }
-   /* Mobile Styles */
    @media screen and (max-width: 767px) {
-   .main-banner {
-   max-height: 350px;
+   header {
+   padding: 10px 0;
    }
-   img.main-bbanner-image {
-   width: 100%;
-   height: auto;
-   max-height: 350px;
-   object-fit: cover;
-   object-position: center center;
-   }
-   }
-   /* Small Mobile Styles */
-   @media screen and (max-width: 480px) {
-   .main-banner {
-   max-height: 280px;
-   }
-   img.main-bbanner-image {
-   width: 100%;
-   height: auto;
-   max-height: 280px;
-   object-fit: cover;
-   object-position: center center;
-   }
-   }
-   @media screen and (max-width: 600px) {
-   img.event-main-logo {
+   header .row {
+   align-items: center;
+   flex-wrap: nowrap;
    margin-left: 0;
-   margin-right: auto;
+   margin-right: 0;
+   }
+   header .col-lg-3:first-child {
+   flex: 1 1 auto;
+   width: auto;
+   max-width: none;
+   padding-left: 0;
+   padding-right: 8px;
+   }
+   header .col-lg-6 {
+   display: none;
+   }
+   header .col-lg-3:last-child {
+   flex: 0 0 auto;
+   width: auto;
+   max-width: none;
+   padding-left: 8px;
+   padding-right: 0;
+   }
+   img.event-main-logo {
+   height: clamp(52px, 16vw, 70px);
+   margin: 0;
    text-align: left;
    display: block;
-   margin-bottom: 0;
+   max-width: 100%;
+   object-fit: contain;
    }
    .live-update-slide {
    overflow: hidden;
    margin-bottom: 5px;
    }
    ul.header-rath-part {
-   margin: 0 auto;
+   margin: 0;
    display: flex;
    align-items: center;
-   justify-content: center;
-   gap: 10px;
+   justify-content: flex-end;
    float: none;
-   flex-wrap: wrap;
+   width: auto;
+   }
+   ul.header-rath-part li {
+   float: none;
+   }
+   .season-btn {
+   padding: 10px 14px;
+   white-space: nowrap;
+   }
+   .season-menu {
+   right: 0;
+   left: auto;
+   top: calc(100% + 8px);
    }
    .container.clientlogo-container {
    position: initial;
@@ -865,18 +788,13 @@ a, a:focus, a:hover, a:active {
    height: auto;
    }
    img.main-bbanner-image {
-   width: 100%;
-   height: auto;
-   object-fit: cover;
-   object-position: center top;
-   }
-   /* Ensure banner link is responsive */
-   @media screen and (max-width: 1199px) {
-   .main-banner a {
+   width: 100% !important;
+   height: auto !important;
+   min-height: 0 !important;
+   max-height: none !important;
    display: block;
-   width: 100%;
-   height: 100%;
-   }
+   object-fit: contain !important;
+   object-position: center top !important;
    }
    .about-second-sec {
    margin-left: 0px;
@@ -1084,7 +1002,7 @@ top: 65px;
 section.healthconnect-video-news {
 float: left;
 width: 100%;
-margin-bottom: 25px;
+margin-bottom: 40px;
 }
 .videos-4 iframe {
 width: 100%;
@@ -1139,7 +1057,7 @@ line-height: 19px;
 border-radius: 12px;
 }
 section.bdn-webstories {
-margin-bottom: 25px;
+margin-bottom: 40px;
 float: left;
 width: 100%;
 }
@@ -1192,11 +1110,11 @@ max-height: 44px;
 }
 /*============== //WEBSTORIES =============*/
 /*============== SHORTS =============*/
-   section.shorts {
-   float: left;
-   margin-bottom: 25px;
-   width: 100%;
-   }
+section.shorts {
+float: left;
+margin-bottom: 40px;
+width: 100%;
+}
 .shorts-5 {
 margin-bottom: 10px;
 }
@@ -1209,7 +1127,7 @@ height: 421px;
 width: 1260px;
 }
 }
-.col-15,
+.col-xs-15,
 .col-sm-15,
 .col-md-15,
 .col-lg-15 {
@@ -1218,7 +1136,7 @@ min-height: 1px;
 padding-right: 7.5px;
 padding-left: 7.5px;
 }
-.col-15 {
+.col-xs-15 {
 width: 20%;
 float: left;
 }
@@ -1266,10 +1184,57 @@ height: 311px;
     display:inline;
 } 
 
+.footer-social-media-icons .facebook-logo,
+.footer-social-media-icons .instagram-logo,
+.footer-social-media-icons .twitter-logo,
+.footer-social-media-icons .youtube-logo{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.footer-social-media-icons .facebook-logo{
+    fill: #1877f2;
+}
+
+.footer-social-media-icons .instagram-logo{
+    fill: #e4405f;
+}
+
+.footer-social-media-icons .twitter-logo{
+    fill: #fff;
+}
+
+.footer-social-media-icons .youtube-logo{
+    fill: #ff0000;
+}
+
+footer img[src*="argus-logo-white"] {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+}
+
+footer h1 + .row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer h1 + .row > [class*="col-"] {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .btn-know-more{
-    margin-top: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: rgb(35 57 115);
@@ -1284,377 +1249,82 @@ height: 311px;
     width: 100%;
 }
 .footer-photos-gallery{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-/* Footer Redesign Styles */
-footer a {
-    transition: color 0.3s ease;
-}
+@media screen and (max-width: 767px) {
+    footer {
+        padding: 28px 16px;
+        overflow-x: hidden;
+        text-align: center;
+    }
 
-footer a:hover {
-    color: #c41230 !important;
-}
+    footer > .row {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-footer div[style*="border: 1px solid #000"] {
-    transition: none;
-}
+    footer [class*="col-"] {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
 
-/* POWERED BY Section Styles */
-.powered-by-section {
-    margin-bottom: 40px;
-}
+    footer .col-lg-2 {
+        display: none;
+    }
 
-.powered-by-box {
-    border: 1px solid #000;
-    background: #fff;
-}
-
-.powered-by-divider {
-    position: absolute;
-    left: 50%;
-    width: 1px;
-    background: #000;
-}
-
-@media screen and (max-width: 768px) {
-    section.about-sec .container {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-    
-    /* Header - Keep logo left-aligned and vertically centered */
-    header {
-        display: flex !important;
-        align-items: center !important;
-        padding: 15px 0 !important;
-    }
-    
-    header .container {
-        display: flex !important;
-        align-items: center !important;
-        padding-left: 15px !important;
-    }
-    
-    header .row {
-        display: flex !important;
-        align-items: center !important;
-        width: 100% !important;
-    }
-    
-    header .col-lg-3,
-    header .col-md-3,
-    header .col-sm-12,
-    header .col-12 {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: flex-start !important;
-    }
-    
-    img.event-main-logo {
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        text-align: left !important;
-        display: block !important;
-    }
-    
-    footer .col-lg-3,
-    footer .col-lg-9 {
-        text-align: center !important;
-        margin-bottom: 20px;
-    }
-    
-    footer img[alt="Argus News"] {
-        margin: 0 auto 20px auto;
+    footer img[src*="argus-logo-white"] {
+        max-width: min(220px, 72vw);
+        margin: 0 auto 18px;
         display: block;
     }
-    
-    /* POWERED BY Section Mobile */
-    .powered-by-box {
-        flex-direction: column !important;
-    }
-    
-    .powered-by-divider {
-        display: none !important;
-    }
-    
-    .powered-by-logo-left,
-    .powered-by-logo-right {
-        width: 100% !important;
-        padding: 20px !important;
-        border-bottom: 1px solid #000;
-    }
-    
-    .powered-by-logo-right {
-        border-bottom: none !important;
-    }
-}
 
-/* ============= COMPREHENSIVE MOBILE RESPONSIVE FIXES ============= */
+    footer h1,
+    footer h3 {
+        text-align: center;
+    }
 
-/* Mobile (max-width: 767px) - Fix padding and spacing */
-@media screen and (max-width: 767px) {
-    /* Base container padding */
-    .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        max-width: 100% !important;
-    }
-    
-    section.about-sec .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
-    /* Header - Keep logo left-aligned and vertically centered */
-    header {
-        display: flex !important;
-        align-items: center !important;
-        padding: 15px 0 !important;
-    }
-    
-    header .container {
-        display: flex !important;
-        align-items: center !important;
-        padding-left: 15px !important;
-    }
-    
-    header .row {
-        display: flex !important;
-        align-items: center !important;
-        width: 100% !important;
-    }
-    
-    header .col-lg-3,
-    header .col-md-3,
-    header .col-sm-12,
-    header .col-12 {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: flex-start !important;
-    }
-    
-    img.event-main-logo {
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        text-align: left !important;
-        display: block !important;
-    }
-    
-    /* All sections need proper padding */
-    section {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    
-    section.about-sec {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    
-    /* Row adjustments - add proper margins */
-    .row {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-    }
-    
-    .row > [class*="col-"] {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
-    /* Cards - Add proper padding and margins */
-    .col-lg-6 > div,
-    .col-lg-4 > div,
-    .col-lg-3 > div,
-    .col-md-6 > div,
-    .col-md-4 > div,
-    .col-md-3 > div {
-        margin: 10px 0 !important;
-        padding: 20px 15px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-    
-    /* Override all inline margin styles on mobile */
-    div[style*="margin"] {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-    
-    /* Override all inline padding styles to ensure proper mobile padding */
-    div[style*="padding: 30px"] {
-        padding: 20px 15px !important;
-    }
-    
-    div[style*="padding: 25px"] {
-        padding: 18px 15px !important;
-    }
-    
-    /* Specific card background fixes */
-    div[style*="background: #f0f8ff"],
-    div[style*="background: #fff4e6"],
-    div[style*="background: #fff"],
-    div[style*="background: linear-gradient"] {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
-    /* Remove fixed heights on mobile */
-    div[style*="height: 380px"],
-    div[style*="height: 320px"],
-    div[style*="height: 200px"],
-    div[style*="min-height: 280px"] {
-        height: auto !important;
-        min-height: auto !important;
-    }
-    
-    /* Text improvements */
-    p {
-        font-size: 14px !important;
-        line-height: 1.7 !important;
-        margin-bottom: 12px !important;
-    }
-    
-    h1 {
+    footer h1 {
+        margin: 22px 0 12px;
         font-size: 20px !important;
-        line-height: 1.3 !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        line-height: 1.25;
     }
-    
-    h2 {
-        font-size: 18px !important;
-        line-height: 1.3 !important;
-    }
-    
-    h3 {
-        font-size: 16px !important;
-        line-height: 1.4 !important;
-    }
-    
-    /* About section */
-    .about-second-sec {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin-left: 0 !important;
-    }
-    
-    .about-second-sec h1 {
-        font-size: 20px !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    
-    .about-second-sec p {
-        font-size: 14px !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    
-    /* Video iframe - Mobile: Stack vertically */
-    .about-first-sec {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin-bottom: 15px !important;
-    }
-    
-    .about-first-sec iframe {
-        width: 100% !important;
-        height: 250px !important;
-    }
-    
-    .about-second-sec {
-        margin-top: 0 !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
-    /* Button */
-    .btn-know-more {
-        margin-left: 15px !important;
-        margin-right: 15px !important;
-        width: calc(100% - 30px) !important;
-        max-width: none !important;
-        box-sizing: border-box !important;
-    }
-    
-    /* Header */
-    header .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
-    /* Banner */
-    .main-banner {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
 
-/* Small Mobile (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .container {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-    
-    section.about-sec .container {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-    
-    header .container {
-        padding-left: 12px !important;
-    }
-    
-    .row {
-        margin-left: -12px !important;
-        margin-right: -12px !important;
-    }
-    
-    .row > [class*="col-"] {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-    
-    .col-lg-6 > div,
-    .col-lg-4 > div,
-    .col-lg-3 > div {
-        padding: 18px 12px !important;
-        margin: 8px 0 !important;
-    }
-    
-    h1 {
+    footer h3 {
         font-size: 18px !important;
-        padding-left: 12px !important;
-        padding-right: 12px !important;
+        line-height: 1.35;
     }
-    
-    h2 {
-        font-size: 16px !important;
+
+    footer h1 + .row {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
-    
-    h3 {
-        font-size: 15px !important;
+
+    .footer-social-media-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: 0 0 18px;
+        padding: 0;
     }
-    
-    p {
-        font-size: 13px !important;
+
+    .footer-social-media-icons li {
+        display: block;
+        margin: 0;
     }
-    
-    .btn-know-more {
-        margin-left: 12px !important;
-        margin-right: 12px !important;
-        width: calc(100% - 24px) !important;
-        font-size: 14px !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+
+    footer img[src*="play-store"],
+    footer img[src*="app-store"] {
+        height: 42px !important;
+        width: auto;
+        max-width: 170px;
+        display: block;
+        margin: 0 auto 14px;
     }
 }

@@ -36,13 +36,66 @@
             margin-left: -15px !important;
             margin-right: -15px !important;
          }
-         .row > [class*="col-"] {
-            padding-left: 15px !important;
-            padding-right: 15px !important;
-         }
-         /* Override inline styles for cards on mobile */
-         div[style*="margin: 10px"],
-         div[style*="margin: 10px 5px"] {
+	         .row > [class*="col-"] {
+	            padding-left: 15px !important;
+	            padding-right: 15px !important;
+	         }
+	         header {
+	            padding: 10px 0 !important;
+	            min-height: 0 !important;
+	         }
+	         header .container {
+	            padding-left: 15px !important;
+	            padding-right: 15px !important;
+	         }
+	         header .row {
+	            align-items: center !important;
+	            flex-wrap: nowrap !important;
+	            margin-left: 0 !important;
+	            margin-right: 0 !important;
+	         }
+	         header .col-lg-3:first-child {
+	            flex: 1 1 auto !important;
+	            width: auto !important;
+	            max-width: none !important;
+	            padding-left: 0 !important;
+	            padding-right: 8px !important;
+	            justify-content: flex-start !important;
+	         }
+	         header .col-lg-6 {
+	            display: none !important;
+	         }
+	         header .col-lg-3:last-child {
+	            flex: 0 0 auto !important;
+	            width: auto !important;
+	            max-width: none !important;
+	            padding-left: 8px !important;
+	            padding-right: 0 !important;
+	            justify-content: flex-end !important;
+	         }
+	         img.event-main-logo {
+	            height: clamp(52px, 16vw, 70px) !important;
+	            max-width: 100% !important;
+	            margin: 0 !important;
+	            object-fit: contain !important;
+	         }
+	         ul.header-rath-part {
+	            width: auto !important;
+	            margin: 0 !important;
+	            justify-content: flex-end !important;
+	            flex-wrap: nowrap !important;
+	         }
+	         .season-btn {
+	            padding: 10px 14px !important;
+	            white-space: nowrap !important;
+	         }
+	         .season-menu {
+	            top: calc(100% + 8px) !important;
+	            right: 0 !important;
+	         }
+	         /* Override inline styles for cards on mobile */
+	         div[style*="margin: 10px"],
+	         div[style*="margin: 10px 5px"] {
             margin-left: 0 !important;
             margin-right: 0 !important;
             margin-top: 10px !important;
@@ -128,7 +181,7 @@
 
          <!-- Current Page -->
          <li>
-            <a href="./Season-4.html" target="_blank" class="active">
+            <a href="./Season-4.html" target="_blank">
                Season 4
             </a>
          </li>
@@ -141,7 +194,7 @@
    </header>
    <div class="main-banner">
       <a href="https://argusenglish.in/" target="_blank">
-         <img src="./images/Season-3/Final-Health-Connect-Season4 1600x1000-px.jpg" alt="" title="" class="main-bbanner-image">
+         <img src="./images/Season-4/Final-Health-Connect-Season4 1600x1000-px.jpg" alt="" title="" class="main-bbanner-image">
       </a>
    </div>
 
@@ -570,7 +623,7 @@
          target="_blank" class="view-all-btn">view all</a>
       </div>
    </section>
-     <section class="healthconnect-video-news">
+   <section class="healthconnect-video-news">
       <div class="container">
          <h3 class="rathayatra-heading">Argus Health Connect Videos</h3>
          <div class="row"></div>
